@@ -1,0 +1,455 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cook Mama</title>
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">Cook<i class="fas fa-utensil-spoon"></i>Mama
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="discount.html">Discount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="food_awarness.html">Awarness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="logout()">
+                                LogOut
+                              </a>
+                            </li>
+                    </ul>
+                    
+                    <!-- search-right -->
+                    <div class="header-search position-relative">
+                        <div class="search-right mx-lg-2">
+                            <a href="#search" class="btn search-btn p-0" title="search">
+                                <i class="fas fa-search"></i></a>
+                            <!-- search popup -->
+                            <div id="search" class="pop-overlay">
+                                <div class="popup">
+                                    <form action="#search" method="GET" class="search-box">
+                                        <input type="search" placeholder="Enter Keyword..." name="search"
+                                            required="required" autofocus="">
+                                        <button type="submit" class="btn"><span class="fas fa-search"
+                                                aria-hidden="true"></span></button>
+                                    </form>
+                                </div>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                            <!-- //search popup -->
+                        </div>
+                    </div>
+                    <!--//search-right-->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- banner section -->
+    <section id="home" class="w3l-banner py-5">
+        <div class="banner-content">
+            <div class="container py-4">
+                <div class="row align-items-center pt-sm-5 pt-4">
+                    <div class="col-md-6">
+                        <h3 class="mb-lg-4 mb-3 pb-lg-2">Fresh Healthy <span class="d-block">Delicious Foods</span>
+                        </h3>
+                        <p class="banner-sub">Healthy foods to eat everyday, Tasty and healthy meal plans customized for you.</p>
+                        <div class="d-flex align-items-center buttons-banner">
+                            <a href="menu.html" class="btn btn-style mt-lg-5 mt-4">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-banner-2 text-end position-relative">
+                        <div class="sub-banner-image mx-auto">
+                            <img src="assets/images/banner1.png" class="img-fluid position-relative" alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner section -->
+
+    <!-- about section -->
+    <section class="w3l-aboutblock py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row">
+                <div class="col-lg-6 left-wthree-img position-relative mb-lg-0 mb-5 pb-lg-0 pb-5">
+                    <img src="assets/images/ab1.jpg" alt="" class="img-fluid radius-image">
+                    <img src="assets/images/ab2.jpg" alt=""
+                        class="img-fluid img-border position-absolute img-position radius-image me-xl-5">
+                </div>
+                <div class="col-lg-6 about-right-faq align-self ps-lg-5 mt-xl-4">
+                    <h3 class="text-bgs mb-2">Since 2023</h3>
+                    <h3 class="title-style">We Have <span>0.01+</span> Years of Experience</h3>
+                    <p class="ab-text mt-4 pt-lg-2">"Cook Mama is a food ordering website that aims to simplify the process of ordering food online. The website offers a variety of dishes from various cuisines that users can browse through and select from".</p>
+                    <p class="mt-4">Overall, Cook Mama aims to provide a convenient and hassle-free food ordering experience for customers, while also supporting local businesses by promoting their services and products.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about section -->
+
+        <!-- popular section -->
+        <section class="w3l-bottom-grids-6 pb-5">
+            <div class="container pb-md-5 pb-4">
+                <h3 class="title-style text-center mb-md-5 mb-4">Our <span>Popular</span> Salads</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 grids-feature">
+                        <div class="area-box">
+                            <img class="img-fluid" src="assets/images/s2.jpg" alt=" ">
+                            <h4><a href="menu.html" class="title-head">Green salad</a></h4>
+                            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis
+                                sed et dolor amet.</p>
+    
+                                <div class="d-flex align-items-center buttons-banner">
+                                    <button class="btn btn-style mt-lg-5 mt-4" id="Green-salad" onclick="food1()">Order Now</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-sm-5 mt-4">
+                        <div class="area-box active">
+                            <img class="img-fluid" src="assets/images/s1.jpg" alt=" ">
+                            <h4><a href="menu.html" class="title-head">Fruit salads</a></h4>
+                            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis
+                                sed dolor et amet.</p>
+                            <div class="d-flex align-items-center buttons-banner">
+                                <button class="btn btn-style mt-lg-5 mt-4" id="Green-salad" onclick="food2()">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-sm-5 mt-4">
+                        <div class="area-box">
+                            <img class="img-fluid" src="assets/images/s3.jpg" alt=" ">
+                            <h4><a href="menu.html" class="title-head">Dessert salads</a></h4>
+                            <p>Amus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis
+                                sed dolor et amet.</p>
+                            <div class="d-flex align-items-center buttons-banner">
+                                <button class="btn btn-style mt-lg-5 mt-4" id="Green-salad" onclick="food3()">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+    <!-- content image section -->
+    <div class="content-image py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row py-md-4">
+                <div class="col-md-9 col-sm-8 col-6 responsive-content">
+                    <h3 class="title-style">Our Restaurants <span>Menu</span></h3>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p></p>
+                        </div>
+                        <div class="col-md-6 mt-md-0 mt-4">
+                            <p></p>
+                        </div>
+                    </div>
+                    <a href="menu.html" class="btn btn-style mt-sm-5 mt-4">What's on the Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //content image section -->
+
+    <!-- 3 grids section -->
+    <div class="w3l-index-block4 pt-5">
+        <div class="container pt-md-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Healthy Food</h4>
+                                <p>Healthy food refers to a diet that includes a variety of nutrient-dense foods that promote optimal health and prevent chronic diseases.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Fresh Salads</h4>
+                                <p>Fresh salads are a healthy and refreshing meal option made with a variety of raw vegetables, fruits, and other nutritious ingredients.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-carrot"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Natural Fiber</h4>
+                                <p>Natural fiber refers to the indigestible portion of plant-based foods, such as fruits, vegetables, whole grains, nuts, and seeds.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-lemon"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Nutritional Food</h4>
+                                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Protect Your Heart</h4>
+                                <p>Protecting your heart through food involves consuming a healthy diet that is low in saturated and trans fats, sodium and added sugar.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 features15-col-text">
+                    <a href="about.html" class="d-flex feature-unit">
+                        <div class="col-2">
+                            <div class="features15-info">
+                                <i class="fas fa-weight"></i>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="features15-para">
+                                <h4>Weight Control</h4>
+                                <p>Weight control through food involves consuming a balanced diet that includes nutrient-dense foods.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //3 grids section -->
+
+    <!-- chef section -->
+    <div class="w3l-chef pt-5">
+        <div class="container pt-4">
+            <div class="row align-items-center">
+                <div class="col-lg-7 pe-lg-5">
+                    <h3 class="title-style mb-4">Meet Our Best <span>Chef's</span></h3>
+                    <p>My goal is to create dishes that not only satisfy hunger but also touch the senses and emotions. When my customers take a bite, I want them to feel like they've been transported to another place, to feel the warmth of a loving hug, or to experience the thrill of an adventure.
+                        I take great pride in knowing that my dishes have the power to satisfy people in ways that go beyond the simple act of eating. To me, there is nothing more rewarding than seeing a happy customer, and I will continue to create dishes that bring joy and satisfaction to those who have the pleasure of enjoying them.
+                        </p>
+                    <p class="mt-3"></p>
+                    <a href="about.html#chefs" class="btn btn-style mt-sm-5 mt-4">See Our Chef's</a>
+                </div>
+                <div class="col-lg-5 img-bg-clr mt-lg-0 mt-4">
+                    <img src="assets/images/img2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //chef section -->
+
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo2").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    991: {
+                        items: 2,
+                        margin: 30,
+                        nav: false
+                    },
+                    1080: {
+                        items: 2,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="../firebase.js"></script>
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+</body>
+
+</html>

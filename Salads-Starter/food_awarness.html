@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Carousel Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<body>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .row{
+        box-shadow: 1px 1px 10px 10px rgba(117, 116, 116, 0.5);
+        border-radius: 10px;
+        background: rgb(0, 0, 0,0.5);
+        padding-left:10px;
+        padding-right: 10px;
+    }
+
+    .lead{
+        color: white;
+        text-align: justify;
+    }
+
+    #text-muted{
+        color: white;
+    }
+    .col-md-5{
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+
+      }
+    }
+
+    /* GLOBAL STYLES
+    --------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      color: #5a5a5a;
+      background-color: #7af88c;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 4rem;
+    }
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      bottom: 3rem;
+      z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+      height: 32rem;
+    }
+
+    .carousel-item>img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 32rem;
+    }
+
+
+    /* MARKETING CONTENT
+-------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .marketing h2 {
+      font-weight: 400;
+    }
+
+    .marketing .col-lg-4 p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+
+
+    /* Featurettes
+------------------------- */
+
+    .featurette-divider {
+      margin: 2rem 0;
+      /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -.05rem;
+      color: white;
+      text-align: center;
+    }
+
+
+    /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+    @media (min-width: 40em) {
+
+      /* Bump up size of carousel content */
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+
+      .featurette-heading {
+        font-size: 40px;
+        font-weight: 500;
+      }
+      
+    }
+
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 3rem;
+      }
+      
+    }
+    .container{
+      width: 90%;
+    }
+    
+    :root { scroll-behavior: smooth; }
+        .stt {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+            box-shadow: 0 0.25rem 0.5rem 0 gray;
+            opacity: 0.7;
+            }
+        .stt:hover {
+            opacity: 0.8;
+            box-shadow: rgba(114, 113, 113, 0.7) 0.5px 0.5px 5px 5px;
+        }
+        .stt:focus {
+            opacity: 0.9;
+            
+        }
+        .stt:active {
+            opacity: 1;
+            
+        }
+        .heading{
+            text-align: center;
+            font-weight: 900;
+            color: black;
+        }
+        .headding{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .content p{
+            color: white;
+
+        }
+        orange{
+            color: orange;
+        }
+  </style>
+  
+  <div class="container">
+    <div class="heading">
+        <h1><orange>"</orange>SAVE FOOD SAVE LIFE <orange>"</orange></h1>
+    </div>
+
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">FOOD AWARNESS<span id="text-muted"></span></h2>
+          <p class="lead">Children starving in many areas of the world is a tragic reality, and one that can be addressed in part by reducing food waste. Millions of children suffer from malnutrition and hunger every day, often due to poverty and lack of access to food. Meanwhile, a significant amount of food is wasted in developed countries due to overproduction, expiration dates, and consumer behavior.
+
+            Reducing food waste can help address this disparity by redirecting food to those who need it most. Rather than throwing away excess food, it can be donated to food banks or other organizations that work to feed hungry children and families. By reducing food waste, we can ensure that more food is available for those who are struggling to access it.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="assets/images/starving.jpg" alt="img2" width="100%" height="100%">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PREVENT FOOD WASTAGE<span id="text-muted"></span>
+          </h2>
+          <p class="lead" id="para">Food waste is a massive global problem. In fact, if food waste were a country, it would be the third-largest emitter of greenhouse gases, right after the USA and China (FAO). This food loss and waste happens at all stages of the food system. We often hear about food going to waste in our homes or being lost at the farmer’s level. But little is spoken about the food that is lost at the trader and buyer level.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="assets/images/food waste.jpg" alt="img1" width="100%" height="100%">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">SAVE FOOD <span id="text-muted"></span></h2>
+          <p class="lead">Saving food is an important aspect of reducing food waste and promoting sustainable living. Food waste is a major problem globally, with an estimated one-third of all food produced for human consumption going to waste every year. This not only has economic consequences, but it also has environmental and social impacts. Food waste contributes to greenhouse gas emissions, as well as the depletion of natural resources such as water and land. It also means that food is not reaching those who need it most, as millions of people go hungry every day.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="assets/images/save food.jpg" alt="img2" width="70%" height="90%">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div >
+          <h2 class="featurette-heading">Simple Ways to Save Food –<span id="text-muted">  How To Reduce Food Waste</span></h2>
+          <div class="content">
+            <br>
+            <h class="headding">1) Plan For Perishables</h><br>
+            <p>About half of household food waste occurs due to things not being consumed in time (or people being squeamish about dates). This food waste is dominated by bread, fruit, vegetables, meat, dairy and pre-made meals.  Meat is especially egregious due to its relatively high carbon intensity.
+
+
+                Any person that runs a busy home plans meals each week.  But when it comes to stopping food waste the key is to plan for perishables.  If you’ve got too much dry spaghetti or tinned tomatoes in the cupboard its really doesn’t matter.  But when you buy stuff that will go of in a week you need a plan to eat it or store it soon.
+                
+                Love Food Hate Waste have some cool menu planning tools.
+                
+                The other issue is people’s fear of dates.  “Use by” dates are about food safety and “best before” dates are about quality.  “Best before” dates are conservative.  The food is still fine to eat after this date, it just may not be at its best.  “Use by” dates are more about food quality.  The food may still be safe to eat after this date but it will not taste as good. If you are worried about food waste try and plan ahead.  And when it comes to dates, use your common sense.  If it looks and smells ok then it probably is.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">2) Eat Dinner Earlier Than Usual</h><br>
+            <p>Studies have shown that the optimal time to eat for your health to eat dinner is early in the evening around 5pm. The simple reason is that the later it is, the greater the tendency to overeat due to accumulated hunger. By eating earlier, you regulate yourself to have smaller amounts of food. This only works if you don’t stay up too late and stuff yourself with late night snacks.
+
+                For added benefits, eating earlier in the evening has been shown to help with weight loss and weight management, as well as reducing the risk of developing obesity and other chronic health conditions such as type 2 diabetes.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">3) Love Your Freezer, Fight Your Fridge – Save Food</h><br>
+            <p>The refrigerator has a mystical ability to disappear food from your consciousness.  With the best intensions in the world we put things in the fridge to ‘eat later’, only to bin them when we eventually journey to the back row.
+
+
+                Getting in the habit of moving the food in your fridge is a good one.  And if you can freeze something, then do consider it.  Food stored in freezers is far more likely to be eaten eventually than things in a fridge.  If you are tempted by ‘buy one get one free offers’ then checking that they can be frozen is a useful thing to do.
+                
+                On our site, we cover a good way to freeze food in glass jars. It’s highly in line with the “zero waste” movement. Glass containers are a great choice for long term storage, whether freezer or at ambient temperatures. It’s really quite simple to get the jars, clean them, prepare the food. Think about bulk and scale to make it efficient for yourself.
+                
+                To be very systematic about preparing large quantities and freezing them down, consider batch cooking. If you are batch cooking, this is a great way to make the most of your efforts. The process is simple and easy to follow, and the end result is really satisfying. You’ll have healthy meals on hand, and you’ll know exactly what’s in them.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">4) Quickly Measure Portions</h><br>
+            <p>The second half of household food waste arises due to preparing more than we eat.  For things like cereals, rice, pasta just having a very simple measuring cup or scale that takes 5 seconds can do wonders to reduce ‘plate waste’. It is also much easier to add a little something to a meal if you’re still peckish, so experimenting with smaller portions is a good one.
+
+                For meat, veg and other perishables, energy can be wasted cutting them up if they are not used. There are a few ways to get around this.  One is to buy things like carrots in baby form, which are great for snacking on and easily used in stir fries or salads.  Another is to choose recipes based on what you already have.  There are great websites like SuperCook that do this.  
+                
+                Reusable containers are great for storing leftovers, but make sure they are small enough to eat.  It’s also good to have a system for labeling and dating food.  This can help to make sure that food gets eaten in time. Some foods can be frozen before they go off and used at a later date.  This is especially useful for things like bread, which can be defrosted as needed.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">5) Grocery Shop Online</h><br>
+            <p>Have you every noticed that the closer you get to the checkout the more sweets and treats you see.  Supermarkets are well studied in helping you buy food you don’t need or isn’t good for; in fact, supermarket food waste is a huge problem.  It’s even worse if you shop while hungry.
+
+                Somehow, due to the magic of the internet that allure is quite there online.  Sitting on a computer, checking the fridge and cupboards it always seems much easier to buy the food you actually need.  This isn’t for everyone. One issue is that grocery stores charge a delivery fee which increases the cost of your food. Another issue is that ideally you get to the groceries in time to put things away in the fridge and freezer.
+                
+                There’s however one problem with buying food online is that it takes away from one of the best parts of grocery shopping, trying new things. We love checking out the new items in the store and seeing what’s on sale and find inspiration for recipes and meals.  The convenience of buying groceries online is great, but it doesn’t replace the experience of going to the store.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">6) Upcycle Your Scraps</h><br>
+            <p>Stale bread plus garlic equals garlic bread.  Bubble and squeak can be nicer than a roast.  Old bananas make bread, smoothies, cakes.
+
+                If you have fruit that is starting to go off, cut it up and freeze it.  You can use it in smoothies or baking. Or if you want to do something with it right now, make a fruit salad or fruit crumble. Similarly, if you have vegetables that are starting to go off, make soup.
+                
+                What about meat? Meat is another common item that gets thrown out.  There are loads of ways to use it up.  Here are some ideas: – If you have meat that is starting to go off, cut it up and freeze it.  You can use it in stews, curries, casseroles, etc.
+                
+                
+                And dairy? Dairy is another common item that gets thrown out.  There are loads of ways to use it up for example if you have milk that is starting to go off, make a smoothie.
+                
+                When you have moment, grab any food that looks like it is going to be wasted soon.  Put it on your kitchen bench, and invent a new meal.  You will amaze yourself.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">7) Use a Food Waste App</h><br>
+            <p>Finally, this is not for saving your food but rather about putting to good use that food SOMEONE ELSE might be wasting. That someone else is a business. These businesses, whether for conscientious or profit motives, subscribe to a “food waste app”.
+
+
+                When a customer signs into the app, they can browse stores which have too many food products like bakeries, restaurants, supermarkets, at risk of being thrown out but which if you purchase you only have to pay a highly discounted charge. After all, if you don’t buy it, the food would have gone to waste. We recommend trying out Too Good To Go. We happen to review 3 other food waste apps at our green apps page in case you’re interested.
+                
+                There are certainly other ones depending on where you live. Watch out for businesses that are using the app just to advertise their wares. They’re supposed to be only selling things that they’re about to throw out so you get an excellent deal. Otherwise this is another way to promote food wastage if the business is using it as a way to lure in more customers.</p>
+          </div>
+          <div class="content">
+            <br>
+            <h class="headding">Conclusions – How To Reduce Food Waste</h><br>
+            <p>To reduce food waste, plan ahead when meal planning, store food properly, buy in bulk and online, and use the new apps that locate throw-away items that are perfectly fine to use.</p>
+          </div>
+        </div>
+    
+      </div>
+
+      <hr class="featurette-divider" style="margin-bottom: 10px;">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+    <!--<div >
+        <a href="#"><img src="/assets/arrow.png" alt="arrow" style="float:right;height: 5%; width: 5%;background-color:rgb(0,0,0,0.2);border-radius: 50%;"></a>
+    </div>-->
+    <a href="#" class="stt"></a>
+  </div>
+
+
+
+
+</body>
+<head>
+</html>
